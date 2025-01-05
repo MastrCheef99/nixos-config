@@ -1,0 +1,129 @@
+* {
+  border: none;
+  font-family: "Fira Code";
+  font-size: 16px;
+}
+
+window#waybar {
+  background: rgba(21,25,34, 0.4);
+}
+
+#custom-launcher {
+  font-size: 26px;
+  color: #59acff;
+  padding-left: 8px;
+  padding-right: 16px;
+  background: #151922;
+  border-bottom: 2px solid black;
+}
+
+#cpu {
+  margin-left: 8px;
+  margin-right: 8px;
+  color: white;
+}
+
+#memory,
+#battery,
+#backlight,
+#temperature {
+  margin-left: 8px;
+  margin-right: 8px;
+  color: white;
+}
+
+#pulseaudio {
+  margin-left: 8px;
+  color: #78bba9;
+}
+
+#temperature.critical {
+  color: red;
+}
+
+#window {
+  font-weight: bold;
+  color: white;
+  padding: 0px 15px 0px 15px;
+}
+
+#bluetooth {
+  /*margin-left: 16px;
+  margin-right: 16px;*/
+  padding-left: 20px;
+  padding-right: 20px;
+  color: white;
+  background: rgb(21,25,34);
+  border-left-style: solid;
+  border-left-color: white;
+  border-left-width: 1px;
+  border-right-style: solid;
+  border-right-color: white;
+  border-right-width: 1px;
+}
+
+#tags {
+  background: #372736;
+  border-radius: 4px;
+}
+
+#tags button {
+  color: gold;
+}
+
+#tags button.occupied {
+  color: #59acff;
+}
+
+#tags button.focused {
+  color: #59acff;
+  border: 1px solid #59acff;
+}
+
+#tags button.focused:hover {
+  color: #59acff;
+}
+
+#tags button:hover {
+  color: #b0fc38;
+}
+
+#clock {
+  /*margin-left: 16px;
+  margin-right: 16px;*/
+  color: #78bba9;
+  background: rgb(21,25,34);
+  padding: 0px 21px 0px 20px;
+  border-right-style: solid;
+  border-right-color: white;
+  border-right-width: 1px;
+  border-left-style: solid;
+  border-left-color: white;
+  border-left-width: 2px;
+}
+
+#tray {
+  margin-left: 8px;
+  margin-right: 8px;
+  padding: 0px 5px 0px 5px;
+}
+
+#custom-power {
+  font-size: 18px;
+  padding-left: 14px;
+  padding-right: 8px;
+  color: white;
+  background: red;
+  border-left-style: solid;
+  border-left-color: white;
+  border-left-width: 1px;
+  border-right-style: solid;
+  border-right-color: white;
+  border-right-width: 2px;
+}
+
+@keyframes blink {
+  to {
+    color: #ffffff;
+  }
+}

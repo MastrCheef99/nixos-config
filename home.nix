@@ -1,1 +1,0 @@
-/home/mastrcheef99/.config/home-manager/home.nix

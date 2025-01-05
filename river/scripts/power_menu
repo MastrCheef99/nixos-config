@@ -1,0 +1,16 @@
+#!/run/current-system/sw/bin/zsh
+
+choice=$(printf "  Lock\n  Kill User Session\n󰍛  Suspend\n󰑙  Reboot\n  Power Off" | wofi --dmenu)
+
+if [[ $choice == "  Lock" ]];then
+  swaylock
+elif [[ $choice == "  Kill User Session" ]];then
+  pkill -KILL -u "$USER"
+elif [[ $choice == "󰍛  Suspend" ]];then
+  swaylock
+  systemctl suspend
+elif [[ $choice == "󰑙  Reboot" ]];then
+  systemctl reboot
+elif [[ $choice == "  Power Off" ]];then
+  systemctl poweroff
+fi
