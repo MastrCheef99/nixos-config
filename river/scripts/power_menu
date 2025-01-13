@@ -3,11 +3,11 @@
 choice=$(printf "  Lock\n  Kill User Session\n󰍛  Suspend\n󰑙  Reboot\n  Power Off" | wofi --dmenu)
 
 if [[ $choice == "  Lock" ]];then
-  swaylock
+  hyprlock
 elif [[ $choice == "  Kill User Session" ]];then
   pkill -KILL -u "$USER"
 elif [[ $choice == "󰍛  Suspend" ]];then
-  swaylock
+  hyprlock
   systemctl suspend
 elif [[ $choice == "󰑙  Reboot" ]];then
   systemctl reboot

@@ -99,12 +99,15 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-  nwg-look
+  	appimage-run
+  	spotify
   	signal-desktop
 	vim
 	virt-manager
 	neovim
 	vscode
+	github-desktop
+	wine
 	wget
 	polkit
 	gcc
@@ -113,11 +116,11 @@
 	feh
 	hyprpaper
 	waybar
+	hyprlock
 	terminator
 	dunst
 	polkit_gnome
 	librewolf
-	browsh
 	firefox
 	plasma-systemmonitor
 	xdg-desktop-portal-hyprland
@@ -125,6 +128,8 @@
 	xwayland
 	gdm
 	xfce.thunar
+	jdk21
+	gradle
 	file
 	steam-tui
 	steamcmd
@@ -143,6 +148,7 @@
 	wofi
 	rofi
 	gparted
+	ntfs3g
 	gnome-disk-utility
 	pywal
 	river
