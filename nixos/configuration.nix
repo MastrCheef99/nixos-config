@@ -100,6 +100,9 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
   	appimage-run
+	cifs-utils
+	gvfs
+	samba
   	spotify
   	signal-desktop
 	vim
